@@ -101,7 +101,7 @@ def HALT():
 @with_nice_docs
 def OBJ_NEXT():
     """Stop the workflow execution for the current object and start
-    the same worfklow for the next object - eng.break_current_loop()."""
+    the same workflow for the next object - eng.break_current_loop()."""
     def x(obj, eng):
         eng.break_current_loop()
     x.__name__ = 'OBJ_NEXT'
